@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Css Sprites 图片动画（Animation） - 蓝色梦想</title>
+<meta name="keywords" content="前端,前端开发,设计,网页设计,网页制作,web前端,web前端开发,CSS,JavaScript,jQuery,html,html5,css3" />
+<meta name="description" content="Css Sprites 图片动画（Animation）" />
+<style type="text/css">
+*{ margin: 0; padding: 0;}
+body{
+	color:#F7DEBD;
+	background:url("images/body_bg.gif");
+}
+.wrapper{
+	text-align:center;
+	padding:20px 0;
+	margin-top:4%;
+	margin-bottom:2%;
+	background:rgba(105,0,140,.4);
+}
+
+.set{
+	width: 120px;
+	height: 150px;
+	display:inline-block;
+	margin:0 10px;
+	font-size:0;
+	background-image: url("images/sailormars.png");
+}
+
+/* Example 1 */
+.standby {
+	-webkit-animation: standby 1.3s steps(8) infinite;
+	-moz-animation: standby 1.3s steps(8) infinite;
+	-ms-animation: standby 1.3s steps(8) infinite;
+	-o-animation: standby 1.3s steps(8) infinite;
+	animation: standby 1.3s steps(8) infinite;
+}
+@-webkit-keyframes standby {
+	from { background-position:0 0; }
+	to { background-position: -960px 0; }
+}
+@-moz-keyframes standby {
+	from { background-position:0 0; }
+	to { background-position: -960px 0; }
+}
+@-ms-keyframes standby {
+	from { background-position:0 0; }
+	to { background-position: -960px 0; }
+}
+@-o-keyframes standby {
+	from { background-position:0 0; }
+	to { background-position: -960px 0; }
+}
+@keyframes standby {
+	from { background-position:0 0; }
+	to { background-position: -960px 0; }
+}
+
+/* Example 2 */
+.run {
+	-webkit-animation: run 0.7s steps(6) infinite;
+	-moz-animation: run 0.7s steps(6) infinite;
+	-ms-animation: run 0.7s steps(6) infinite;
+	-o-animation: run 0.7s steps(6) infinite;
+	animation: run 0.7s steps(6) infinite;
+}
+@-webkit-keyframes run {
+	from { background-position:0 -150px; }
+	to { background-position: -720px -150px; }
+}
+@-moz-keyframes run {
+	from { background-position:0 -150px; }
+	to { background-position: -720px -150px; }
+}
+@-ms-keyframes run {
+	from { background-position:0 -150px; }
+	to { background-position: -720px -150px; }
+}
+@-o-keyframes run {
+	from { background-position:0 -150px; }
+	to { background-position: -720px -150px; }
+}
+@keyframes run {
+	from { background-position:0 -150px; }
+	to { background-position: -720px -150px; }
+}
+
+/* Example 3 */
+.jump {
+	-webkit-animation: jump 1s steps(10) infinite;
+	-moz-animation: jump 1s steps(10) infinite;
+	-ms-animation: jump 1s steps(10) infinite;
+	-o-animation: jump 1s steps(10) infinite;
+	animation: jump 1s steps(10) infinite;
+}
+@-webkit-keyframes jump {
+	from { background-position:0 -300px; }
+	to { background-position: -1200px -300px; }
+}
+@-moz-keyframes jump {
+	from { background-position:0 -300px; }
+	to { background-position: -1200px -300px; }
+}
+@-ms-keyframes jump {
+	from { background-position:0 -300px; }
+	to { background-position: -1200px -300px; }
+}
+@-o-keyframes jump {
+	from { background-position:0 -300px; }
+	to { background-position: -1200px -300px; }
+}
+@keyframes jump {
+	from { background-position:0 -300px; }
+	to { background-position: -1200px -300px; }
+}
+
+/* Example 4 */
+.attack{
+	-webkit-animation: attack 1s steps(9) infinite;
+	-moz-animation: attack 1s steps(9) infinite;
+	-ms-animation: attack 1s steps(9) infinite;
+	-o-animation: attack 1s steps(9) infinite;
+	animation: attack 1s steps(9) infinite;
+}
+@-webkit-keyframes attack {
+	from { background-position:0 -450px; }
+	to { background-position: -1080px -450px; }
+}
+@-moz-keyframes attack {
+	from { background-position:0 -450px; }
+	to { background-position: -1080px -450px; }
+}
+@-ms-keyframes attack {
+	from { background-position:0 -450px; }
+	to { background-position: -1080px -450px; }
+}
+@-o-keyframes attack {
+	from { background-position:0 -450px; }
+	to { background-position: -1080px -450px; }
+}
+@keyframes attack {
+	from { background-position:0 -450px; }
+	to { background-position: -1080px -450px; }
+}
+
+/* Info */
+h1{
+	text-align:center;
+	font-family:Helvetica,\5FAE\8F6F\96C5\9ED1;
+	margin-top:8%;
+	font-weight:normal;
+}
+.info{
+	color:rgba(250,222,190,0.6);
+	text-align:center;
+	font-size:12px;
+}
+.info a{
+	color:rgba(250,222,190,0.6);
+	text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<h1>Css Sprites 图片动画（Animation）</h1>
+<div class="wrapper">
+	<div class="set standby"></div>
+	<div class="set run"></div>
+	<div class="set jump"></div>
+	<div class="set attack"></div>
+</div>
+
+</body>
+</html>
